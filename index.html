@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic banking system
+ </title>
+</head>
+<style>
+	
+	@media only screen and ( min-width: 100px)
+{
+	
+	
+	.order{
+		position: absolute;
+		top: 30%;
+		font-size: 0.38cm;
+		left: 65%;
+	}
+	.order1{
+		position: absolute;
+		left: 85%;
+		top: 30%;
+		font-size: 0.38cm;
+	}
+.order:hover{
+	opacity: 1;
+		padding: 0.1cm;
+		background-color: #DA70D6;
+		color: black;
+		border-radius: 0.2cm;
+		
+}
+.order1:hover{
+	opacity: 1;
+		padding: 0.1cm;
+		background-color: #DA70D6;
+		color: black;
+		border-radius: 0.2cm;
+		
+}
+	.n{
+		position: absolute;
+		top: 0.5cm;
+		right: 0.5cm;
+		height: 8%;
+		left: 0.5cm;
+
+		background-color: white;
+		
+	
+	}
+	
+	.na{
+		width: 1cm;
+		height: 1cm;
+		position: absolute;
+		top: 0.25cm;
+		left: 0.5cm;
+	}
+	.n h2{
+		position: absolute;
+		font-size: 0.7cm;
+		left: 2cm;
+		top: -0.23cm;
+		background-color: white;
+		
+		color:#DA70D6;
+		font-weight: bold;
+		cursor: pointer;
+	}
+	h2:hover{
+		text-decoration: underline;
+		color: black;
+	}
+	.build{
+		width: 100%;
+		height: 14cm;
+	}
+	.img1{
+		width: 30%;
+		height: 40%;
+		position: relative;
+		top: 10%;
+		left:30%;
+	}
+	.d1{
+		position: absolute;
+		bottom: 0cm;
+		background-color: white;
+		width: 20%;
+		left: 15%;
+		height: 5cm;
+	}
+	.d1:hover{
+		position: absolute;
+		bottom: 2cm;
+		background-color: 	#FF8C00;
+		height: 6cm;
+		padding-top: 0.5cm;
+	}
+	.d1 h4{
+		visibility: hidden;
+	}
+	.d1:hover h4{
+		 visibility: visible;
+		 position: relative;
+		
+		 color: black;
+		 top: 10%;
+		 font-size: 0.35cm;
+		 text-align: center;
+	}
+		.img3{
+		width: 30%;
+		height: 40%;
+		position: relative;
+		top: 10%;
+		left:30%;
+	}
+	.d3{
+		position: absolute;
+		bottom: 0cm;
+		background-color: white;
+		width: 20%;
+		left: 75%;
+		height: 5cm;
+	}
+	.d3:hover{
+		position: absolute;
+		bottom: 2cm;
+		background-color: 	#FF8C00;
+		height: 6cm;
+		padding-top: 0.5cm;
+	}
+	.d3 h4{
+		visibility: hidden;
+	}
+	.d3:hover h4{
+		 visibility: visible;
+		 position: relative;
+		
+		 color: black;
+		 top: 10%;
+		 font-size: 0.35cm;
+		 text-align: center;
+	}
+	.img2{
+		width: 30%;
+		height: 40%;
+		position: relative;
+		top: 10%;
+		left:30%;
+	}
+	.d2{
+		position: absolute;
+		bottom: 0cm;
+		background-color: white;
+		width: 20%;
+		left: 45%;
+		height: 5cm;
+	}
+	.d2:hover{
+		position: absolute;
+		bottom: 2cm;
+		background-color: 	#FF8C00;
+		height: 6cm;
+		padding-top: 0.5cm;
+	}
+	.d2 h4{
+		visibility: hidden;
+	}
+	.d2:hover h4{
+		 visibility: visible;
+		 position: relative;
+		
+		 color: black;
+		 top: 10%;
+		 font-size: 0.35cm;
+		 text-align: center;
+	}
+}
+@media only screen and (min-width: 1000px){
+	.n h2{
+		position: relative;
+		left: 9%;
+		top: -0.6cm;
+		width: 7cm;
+		padding-left: 0.5cm;
+		background-color: white;
+		
+		color:#DA70D6;
+		font-weight: bold;
+		cursor: pointer;
+		font-size: 0.8cm;
+	}
+	h2:hover{
+		text-decoration: underline;
+		color: black;
+	}
+
+		.order{
+		position: absolute;
+		top: 15%;
+		font-size: 0.42cm;
+		left: 65%;
+	}
+	.order1{
+		position: absolute;
+		left: 85%;
+		top: 15%;
+		font-size: 0.42cm;
+	}
+.order:hover{
+	opacity: 1;
+		padding: 0.35cm;
+		top: -0.15cm;
+		background-color: #DA70D6;
+		color: black;
+		border-radius: 0.2cm;
+		
+}
+.order1:hover{
+	opacity: 1;
+		padding: 0.35cm;
+		top: -0.15cm;
+		background-color: #DA70D6;
+		color: black;
+		border-radius: 0.2cm;
+		
+}
+	.na{
+		width:2cm; 
+		height:1cm;
+		position: absolute;
+		top: 5%;
+		left: 3%;
+	}
+	
+	.build{
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: absolute;
+		top: 2cm;
+		border: 0.1cm solid #DA70D6;
+		left: 0.05cm;
+		width: 99%;
+		height: 14cm;
+	}
+	.img1{
+		width: 3cm;
+		height: 3cm;
+		position: relative;
+		top: 0.5cm;
+		left:2.5cm;
+	}
+	.d1{
+		position: absolute;
+		bottom: 0cm;
+		background-color: white;
+		width: 8cm;
+		left: 10%;
+		height: 5cm;
+	}
+	
+	.d2{
+		position: absolute;
+		bottom: 0cm;
+		background-color: white;
+		width: 8cm;
+		left: 40%;
+		height: 5cm;
+	}
+	.img2{
+		width: 3cm;
+		height: 3cm;
+		position: relative;
+		top: 0.3cm;
+		left:2.5cm;
+	}
+		.d3{
+		position: absolute;
+		bottom: 0cm;
+		background-color: white;
+		width: 8cm;
+		left: 70%;
+		height: 5cm;
+	}
+	.img3{
+		width: 3cm;
+		height: 3cm;
+		position: relative;
+		top: 0.3cm;
+		left:2.5cm;
+	}
+	.d1:hover{
+		position: absolute;
+		bottom: 2cm;
+		background-color: 	#FF8C00;
+		height: 6cm;
+		padding-top: 0.5cm;
+	}
+	.d1 h4{
+		visibility: hidden;
+	}
+	.d1:hover h4{
+		 visibility: visible;
+		 position: relative;
+		text-align: center;
+		font-size: 0.5cm;
+		 color: black;
+		 top: 0.8cm;
+	}
+	.d2:hover{
+		position: absolute;
+		bottom: 2cm;
+		background-color: 	#FF8C00;
+		height: 6cm;
+		padding-top: 0.5cm;
+	}
+	.d2 h4{
+		visibility: hidden;
+	}
+	.d2:hover h4{
+		 visibility: visible;
+		 position: relative;
+		text-align: center;
+		 color: black;
+		 font-size: 0.5cm;
+		 top: 0.8cm;
+	}
+	.d3:hover{
+		position: absolute;
+		bottom: 2cm;
+		background-color: 	#FF8C00;
+		height: 6cm;
+		padding-top: 0.5cm;
+	}
+	.d3 h4{
+		visibility: hidden;
+	}
+	.d3:hover h4{
+		 visibility: visible;
+		 position: relative;
+		 text-align: center;
+		 color: black;
+		 font-size: 0.5cm;
+		 top: 0.8cm;
+	}
+}
+	</style>
+	<body>
+		<div class="back">
+		<nav class="n">
+			<img src="https://c4.wallpaperflare.com/wallpaper/480/460/889/vector-the-city-view-style-building-hd-wallpaper-preview.jpg" class="na">
+<h2 class="logo">ASYA BANK</h2>
+
+ <a href="inter.php" class="order1">HOME</a>
+ <a href="contact.php" class="order">CONTACT</a>
+
+</nav>
+<img src="build.jpg" class="build">
+</div>
+<a href="view.php">
+		<div class="d1">
+		
+		<img src="us.jpg" class="img1">
+		<h4>VIEW CUSTOMER</h4>
+</a>
+</div>
+
+<div class="d2">
+		<a href="tra.php">
+		<img src="m.jpg" class="img2">
+		<h4>TRANSCATION</h4>
+</a>
+</div>
+<div class="d3">
+		<a href="tranfer.php">
+		<img src="tra.png" class="img3">
+		
+<h4>TRANFER HISTORY</h4>
+</a>
+</div>
+
+	</body>
+	</html>
